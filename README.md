@@ -1,6 +1,6 @@
 <h1>Active Directory Homelab</h1>
 
- ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
+ ### [Pictoral Walkthrough Demonstration]
 
 <h2>Description</h2>
 In this lab we are going to walk through how to create and active directory HomeLab envionrment using Oracle Box. Our goal 
