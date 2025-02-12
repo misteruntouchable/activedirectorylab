@@ -39,9 +39,37 @@ Next we want to Create our first Virtual Machine: <br/>
 <br />
 <br />
 Install Windows Server:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/gOwkMl9.png" height="80%" width="80%" "/>
+  <p align="center"> Here we want to install our Windows Server 19. Click the Standard Desktop Experience
+                     and Custom Install. Note: At the default Administrator account give password . I like to 
+                     use this password throughout lab just for consistency purposes but this should
+                     not be done in a production environment.</br>
 <br />
 <br />
+
+<br />
+<br />
+Install Windows Server:  <br/>
+<img src="https://imgur.com/lsPsQiF.png" height="80%" width="80%" "/>
+  <p align="center"> Here at the server log in use the same password that you gave at the default admin section.
+                     Note: as a the mouse navigation may be lagging. So you can install VM Guest additions for better
+                     navigation of the mouse within your VM. After that we want to do two things with the server.
+                      We want to set up our IP addressing for the internal NIC and external NIC</br>
+<br />
+<br />
+
+<br />
+<br />
+Setting Up IP Addressing:  <br/>
+<img src="https://imgur.com/HlQEBHt.png" height="80%" width="80%" "/>
+  <p align="center"> Here, within the desktop section of the VM go to the bottom right of the screen and click the 
+                     computer icon, then click network. The click adapter options. We want to define the external and internal
+                     adapters by renaming them; One internal and one external. Note that you should be able to tell the differnece 
+                      between the adapters becuase the internal network will have an APIPA address.On the internal adapter we want 
+                      assign this adapter with an IP address and subnet mask. </br>
+<br />
+<br />
+
 
 <!--
  ```diff
