@@ -75,6 +75,15 @@ Setting Up IP Addressing:  <br/>
 Rename the PC on the VM:  <br/>
 <img src="https://imgur.com/osMS8y1.png" height="80%" width="80%" "/>
   <p align="center"> Here, we want to simply right click the start button and go to system and then give the 
+                     computer name of you choice. Then restart VM (ie DC)</br>
+<br />
+<br />
+
+<br />
+<br />
+Next We want to install Active Directory Domain Services:  <br/>
+<img src="https://imgur.com/osMS8y1.png" height="80%" width="80%" "/>
+  <p align="center"> Here, we want to simply right click the start button and go to system and then give the 
                      computer name of you choice. (ie DC)</br>
 <br />
 <br />
