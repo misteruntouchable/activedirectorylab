@@ -28,6 +28,21 @@ Creating our own Active Directory Lab: <br/>
  
 <br />
 
+<p align="center">
+Next we want to Create our first Virtual Machine: <br/>
+<img src="https://imgur.com/CFGit4D.png" height="80%" width="80%""/>
+ <p align="center"> We want to download our Windows Server 2019 ISO and Windows 10 ISO.
+                    Then we want to set up our server within our Virtual Box. Give it a name.(ie; DC)
+                    Set other parameters for your VM like RAM,Number of Processors,Network Adapters(NAT,
+                    Internal Network),Storage. Remember to put the ISO server in the Optical Drive  
+                  <br/>
+<br />
+<br />
+Install Windows Server:  <br/>
+<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+
 <!--
  ```diff
 - text in red
