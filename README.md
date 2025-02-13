@@ -115,13 +115,65 @@ Next We want to install Active Directory Domain Services:  <br/>
 
 <br />
 <br />
-   Back in Active Directory users and computers <br/>
+   Back into Active Directory users and computers <br/>
 <img src="https://imgur.com/P7wUHVP.png" height="80%" width="80%" "/>
-  <p align="center"> Go back to Users and Computers and right click on the user name that you have created.
-                     Go to properties, member of and add </br>
+  <p align="center"> Go back to Users and Computers and right click on the username that you have created. Right click,
+                     go to properties, member of and add the new user name to Domain admins. To verify that this works log out(sign out)
+                      of the domain controller. Then sign into other account with you unser account name and password.</br>
 <br />
 <br />
 
+<br />
+<br />
+   The Next thing We Want to Set Up A NAT(Network Address Translation) and a RAS(Remote Access Service) <br/>
+<img src="https://imgur.com/G0fkVL3.png" height="80%" width="80%" "/>
+  <p align="center"> The purpose of this is when we create our windows 10 Client its going to allow the client to be on a 
+                      private virtual network but still be able to access the external network through the Domain Controller.So
+                       we want to install NAT and RAS on the DC to allow our client to hav e the ability to do that. So go
+                       to roles and feature and click remote access. We also want to also include routing and Direct access, add 
+                       features and install.  
+                       </br>
+<br />
+<br />
+
+<br />
+<br />
+   Installing Remote Access <br/>
+<img src="https://imgur.com/fsmo7HX.png" height="80%" width="80%" "/>
+  <p align="center">  
+                       </br>
+<br />
+<br />
+
+<br />
+<br />
+   Installing NAT <br/>
+<img src="https://imgur.com/SA7Mbae.png" height="80%" width="80%" "/>
+  <p align="center"> After this is done go to tools and click routing and remote access. We want to install NAT to allow our internal 
+                     client to connect to the internet using one public address. Use this interface to connect to the internet. </br>
+<br />
+<br />
+
+
+<br />
+<br />
+   Next we want to Set Up a DHCP server on our Domain <br/>
+<img src="https://imgur.com/SqDIap3.png" height="80%" width="80%" "/>
+  <p align="center"> This will allow our window 10 client to get an IP address that will let them get on the internet.
+                     Go to the Domain Dashboard and Click and Roles and Feature. We want to click the DCHP server and install it.
+                     After the installtion to to tools. We want to set up the scope of the address. The purpose of DHCP is to allow 
+                     clients on the network to automatically get ip address.</br>
+<br />
+<br />
+
+<br />
+<br />
+   Creating the Scope of Our DHCP addresses <br/>
+<img src="https://imgur.com/XbmTVl7.png" height="80%" width="80%" "/>
+  <p align="center"> The scope entails you create a range of ip addresses that your client will be able to accesss to use internally then 
+                     via  NAT will be able to translate into the public IP address that we have confiured for external use.</br>
+<br />
+<br />
 
 
 <!--
