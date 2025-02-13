@@ -108,7 +108,17 @@ Next We want to install Active Directory Domain Services:  <br/>
    ADMINS-(Organization Unit)  <br/>
 <img src="https://imgur.com/pRmp794.png" height="80%" width="80%" "/>
   <p align="center"> Inside here we want to create a new user and maybe give it your name. The create a user logon name,
-                     as a common convention</br>
+                     as a common convention we would use something like a-cdavis, then we create a log on password.
+                     Note: after you have created the account its not a domain yet. </br>
+<br />
+<br />
+
+<br />
+<br />
+   Back in Active Directory users and computers <br/>
+<img src="https://imgur.com/P7wUHVP.png" height="80%" width="80%" "/>
+  <p align="center"> Go back to Users and Computers and right click on the user name that you have created.
+                     Go to properties, member of and add </br>
 <br />
 <br />
 
