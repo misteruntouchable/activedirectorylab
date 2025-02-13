@@ -36,16 +36,7 @@ Next we want to Create our first Virtual Machine: <br/>
                     Set other parameters for your VM like RAM,Number of Processors,Network Adapters(NAT,
                     Internal Network),Storage. Remember to put the ISO server in the Optical Drive  
                   <br/>
-<br />
-<br />
-Install Windows Server:  <br/>
-<img src="https://imgur.com/gOwkMl9.png" height="80%" width="80%" "/>
-  <p align="center"> Here we want to install our Windows Server 19. Click the Standard Desktop Experience
-                     and Custom Install. Note: At the default Administrator account give password . I like to 
-                     use this password throughout lab just for consistency purposes but this should
-                     not be done in a production environment.</br>
-<br />
-<br />
+
 
 <br />
 <br />
@@ -82,12 +73,44 @@ Rename the PC on the VM:  <br/>
 <br />
 <br />
 Next We want to install Active Directory Domain Services:  <br/>
-<img src="https://imgur.com/osMS8y1.png" height="80%" width="80%" "/>
-  <p align="center"> Here, we want to simply right click the start button and go to system and then give the 
-                     computer name of you choice. (ie DC)</br>
+<img src="https://imgur.com/SqDIap3.png" height="80%" width="80%" "/>
+  <p align="center"> Here we want to to install Active Directory Domain Services and then we want to create a domain.
+                     So, first click add roles and features, and choose Active Directory Domain Services. I have intentionally excluded 
+                      a few steps with this installation for brevity.Note: after you have downloaded the AD DS you must do a post 
+                      deployment configuration. Then add a new forest. Create the name of your domain with a password then intsall.
+                      this will restart your computer. </br>
+
+                      
 <br />
 <br />
 
+<br />
+<br />
+   We want to now create our own Dedicated Domian Administrator Account :  <br/>
+<img src="https://imgur.com/amfhSLF.png" height="80%" width="80%" "/>
+  <p align="center"> When the computer restarts from the prior installation, this is what you should see the built-in administration 
+                    account. However, we want to create our own dedicated domain admin account instead of using the built-in
+                    Administrator Account. We can do this by going to the start button, then Administrator tools, then active directory 
+                   users and computers.</br>
+<br />
+<br />
+
+<br />
+<br />
+   Active Directory Users and Computers  <br/>
+<img src="https://imgur.com/yOVIB4W.png" height="80%" width="80%" "/>
+  <p align="center">Within the users and computers right click on the mydomain.com. We want to create and Organiztional Unit
+                    to put our admin account in. Lets name it "ADMINS"</br>
+<br />
+<br />
+<br />
+<br />
+   ADMINS-(Organization Unit)  <br/>
+<img src="https://imgur.com/pRmp794.png" height="80%" width="80%" "/>
+  <p align="center"> Inside here we want to create a new user and maybe give it your name. The create a user logon name,
+                     as a common convention</br>
+<br />
+<br />
 
 
 
