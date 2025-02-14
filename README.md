@@ -171,9 +171,65 @@ Next We want to install Active Directory Domain Services:  <br/>
    Creating the Scope of Our DHCP addresses <br/>
 <img src="https://imgur.com/XbmTVl7.png" height="80%" width="80%" "/>
   <p align="center"> The scope entails you create a range of ip addresses that your client will be able to accesss to use internally then 
-                     via  NAT will be able to translate into the public IP address that we have confiured for external use.</br>
+                     via  NAT will be able to translate into the public IP address that we have confiured for external use. Note: 
+                     Ensure that you include an ip lease duration the will extend for the length of time the work is requred for. </br>
 <br />
 <br />
+
+<br />
+<br />
+   Implenting Powershell <br/>
+<img src="https://imgur.com/fPdrK5O.png" height="80%" width="80%" "/>
+  <p align="center"> Within the active directory lab we may want to create several users. However, if done manually this may take 
+                     a considerable amount of time. You can use powershell scripts that will systematically create users and add it to 
+                     your users directory. With you DC, go to start and click on power shell and click powershell ISE. Then open the 
+                     powerscript inside the ISE.</br>
+<br />
+<br />
+
+<br />
+<br />
+   Running a Powershell script <br/>
+<img src="https://imgur.com/FoqyDs0.png" height="80%" width="80%" "/>
+  <p align="center"> Run the powershell script inside of the ISE along with the user name the you may have create into Notepad.
+                     This is automatically implement the user into your Users and Ccmputers Active Directory</br>
+<br />
+<br />
+
+<br />
+<br />
+   Now we want to Implement Windows 10 to create a Client for our Domain Controller <br/>
+   <img src="https://imgur.com/ae9Qpb1.png" height="80%" width="80%" "/>
+  <p align="center"> Here we want to work on the internal NIC and we want to get the IP address from the DHCP we configured in the DC.
+                     However, before we get the we will first go into the oracle box and create another VM. The settings should basically be the same process
+                     as implementing Windows server except that within the network setting adapter use the internal feature instead of NAT. The start windows and install 
+                     windows 10. After you are finished you we want to verify whether you can access internet in your client VM</br>
+<br />
+<br />
+
+
+<br />
+<br />
+   Verifying whether we can reach the internet in our Client using Ping <br/>
+   <img src="https://imgur.com/MnR5Y9H.png" height="80%" width="80%" "/>
+  <p align="center"> Let's try to ping www.google.com within our client machine to see whether we can reach the internet.
+                     Go to your command prompt within the client machine and ping google. If you get a reply that means we have internet 
+                     access and the DNS is resolving the google domain name. There is connectivity via the default gateway in the DC.</br>
+<br />
+<br />
+
+<br />
+<br />
+   Finally we want to Name our Client PC and Join it to the DC domain <br/>
+   <img src="https://imgur.com/9AzVZBl.png" height="80%" width="80%" "/>
+  <p align="center"> First to rename the PC go to the start button and right click. Look for the systems button and instead of click rename this pc, scroll down to rename this PC advanced. This will rename the PC and also you can join it to the domain at the same time.
+    When the domain change/computer name box opens up you can name the PC and to join it to the DC hit Member of Domain and type in the name of your domain (ie mydomain.com). Type in the password of your domain and hit install. Your client should now be apart of your Domain . Finally the VM should restart and you can sign into the domain via your client name and password(general password for the domain ).
+     This lab and not included some of the smaller nuances of what you may need to do as far as housekeeping but this is a general outline of what you need to create a functional Active Directory Lab.</br>
+<br />
+<br />
+
+
+
 
 
 <!--
