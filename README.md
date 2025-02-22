@@ -3,7 +3,7 @@
  ### [Pictoral Walkthrough Demonstration]
 
 <h2>Description</h2>
-In this lab we are going to walk through how to create and active directory HomeLab envionrment using Oracle Box. Our goal 
+In this lab we are going to walk through how to create and active directory HomeLab environment using Oracle Box. Our goal 
 is to help to develop your understanding of how active directory and windows networking works. If you have any questions about
 what we have create do hesitate to shoot me an email.
 <br />
