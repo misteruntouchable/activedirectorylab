@@ -11,8 +11,8 @@ what we have create do hesitate to shoot me an email.
 
 <h2>Languages and Utilities Used</h2>
 
-- <b>PowerShell</b> 
-- <b>Oracle Virtual Box</b>
+- <b>PowerShell</b>
+ - <b>Oracle Virtual Box</b>
 
 <h2>Environments Used </h2>
 
