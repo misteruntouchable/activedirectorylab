@@ -23,7 +23,7 @@ what we have create do hesitate to shoot me an email.
 <p align="center">
 Creating our own Active Directory Lab: <br/>
 <img src="https://imgur.com/vh6G4Te.png" height="80%" width="80%" "/>
-<p align="center"> First we want to download our virtual box from Oracle.
+<p align="center"> First we want to do is download our virtual box from Oracle.
                   Dont forget to also download the extension pack as well <br/>
  
 <br />
